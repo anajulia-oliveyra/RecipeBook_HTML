@@ -1,0 +1,72 @@
+body {
+  background: #fffaf3;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #444;
+}
+
+.livro {
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fef6e4;
+  margin-bottom: 40px;
+  border: 1px solid #e4dccc;
+}
+
+.pagina {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.pagina.esquerda {
+  border-right: 1px solid #e4dccc;
+  background: linear-gradient(to right, #fef6e4, #fffaf3);
+}
+
+.pagina.direita {
+  background: linear-gradient(to left, #fef6e4, #fffaf3);
+}
+
+.pagina h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #d17b88;
+}
+
+.pagina h3 {
+  margin-top: 20px;
+  color: #6b9080;
+}
+
+.pagina ul, .pagina ol {
+  margin-left: 20px;
+}
+
+.pagina img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+a {
+  color: #a393eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
